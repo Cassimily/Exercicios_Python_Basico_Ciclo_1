@@ -11,3 +11,11 @@
 
 
 
+cotacao = float(input("Digite a cotação do dollar: "))
+dolar = float(input("Digite o valor em dollar a ser convertido para real: "))
+
+# conversão para reais
+reais = dolar * cotacao
+
+# exibição do resultado
+print("O valor em reais é:", reais)

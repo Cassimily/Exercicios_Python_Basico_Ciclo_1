@@ -52,3 +52,29 @@
 
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+print("escolha uma opcao: ")
+print("1 - Soma")
+print("2 - Subtração") 
+print("3 - Multiplicação")
+print("4 - Divisão")
+
+opcao = int(input("Digite a opção: "))
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+if opcao == 1:
+    resultado = num1 + num2
+    print(f"O resultado é: {resultado}")
+elif opcao == 2:
+    resultado = num1 - num2
+    print(f"O resultado é: {resultado}")
+elif opcao == 3:
+    resultado = num1 * num2
+    print(f"O resultado é: {resultado}")
+elif opcao == 4:
+    if num2 != 0:
+        resultado = num1 / num2
+        print(f"O resultado é: {resultado}")
+    else:
+        print("ERRO. O segundo número não pode ser zero.")
+else:
+    print("ERRO. Escolha uma opção válida.")

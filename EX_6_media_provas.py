@@ -19,5 +19,30 @@
 # | Aluno aprovado
 # | ______________________________ |
 
-# ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+# ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------
+print("| ______________________________ |")
+print("| SISTEMA DE PROVAS")
+print("| ______________________________ |")
 
+nome = input("| Nome do aluno: ")
+
+nota_1 = float(input("| Nota da primeira prova: "))
+nota_2 = float(input("| Nota da segunda prova: "))
+nota_3 = float(input("| Nota da terceira prova: "))
+
+# soma das notas
+soma = nota_1 + nota_2 + nota_3
+
+# cálculo da média
+media = soma / 3
+
+print("| ______________________________ |")
+print(f"| Aluno: {nome}")
+print("| Média:", media)
+
+if media >= 7:
+    print("| Aluno aprovado")
+else:
+    print("| Aluno reprovado")
+
+print("| ______________________________ |")

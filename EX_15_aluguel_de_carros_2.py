@@ -37,3 +37,28 @@
 # Você andou 100.0km por 10 dias, então o preço a pagar é R$615.00.
 
 # ------------------------------------------ ESCREVA SEU CÓDIGO ABAIXO -----------------------------------------------------------
+
+# Tabela de preços dos carros por dia
+precos_carros ={
+    "pagani": 1000,
+    "bmw": 1000,
+    "audi": 150,
+    "civic ": 350
+}
+
+# Preço padrão para modelos não encontrados
+preco_padrao = 60
+
+# Solicita ao usuário o modelo do carro, dias e quilômetros
+modelo = input("Qual foi o modelo do carro alugado? ").lower()
+dias = int(input("Por quantos dias o carro foi alugado: "))
+km = float(input("Quantos km o carro rodou: "))
+
+# Obtém o preço do carro (usa padrão se modelo não encontrado)
+preco_diario = precos_carros.get(modelo, preco_padrao)
+
+# Calcula o valor total: (dias × preço diário) + (km × 0.15)
+preco_total = dias * preco_diario + km * 0.15
+
+# Exibe o resultado formatado
+print(f"Você andou {km}km por {dias} dias, então o preço a pagar é R${preco_total:.2f}.")
